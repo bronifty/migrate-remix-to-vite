@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "vite build && vite build --ssr",
-    "dev": "vite dev",
-    "start": "remix-serve ./build/index.js",
+    "dev": "node ./server.mjs",
+    "start": "cross-env NODE_ENV=production node ./server.mjs",
     "typecheck": "tsc"
   },
   "dependencies": {
