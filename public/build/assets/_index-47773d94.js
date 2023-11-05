@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-26afeca0.js";const n=()=>[{title:"New Remix App"},{name:"description",content:"Welcome to Remix!"}];function i(){return e.jsx(e.Fragment,{children:e.jsx("div",{children:"index file datas test"})})}export{i as default,n as meta};

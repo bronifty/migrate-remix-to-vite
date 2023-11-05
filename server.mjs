@@ -35,7 +35,7 @@ app.all(
   createRequestHandler({
     build: vite
       ? () => unstable_loadViteServerBuild(vite)
-      : await import("./build/index.js"),
+      : await import("./build/index.cjs"),
   })
 );
 
@@ -43,4 +43,3 @@ const port = 3000;
 app.listen(port, () =>
   console.log("http://localhost:" + port)
 );
-

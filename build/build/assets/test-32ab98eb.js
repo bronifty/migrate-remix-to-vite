@@ -1,0 +1,2 @@
+import{j as t}from"./jsx-runtime-26afeca0.js";const o={title:"Hello from MDX"};function r(n){const e={h1:"h1",p:"p",...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(e.h1,{children:"hello mdx"}),`
+`,t.jsx(e.p,{children:"Another line"})]})}function s(n={}){const{wrapper:e}=n.components||{};return e?t.jsx(e,{...n,children:t.jsx(r,{...n})}):r(n)}function i(){return t.jsxs(t.Fragment,{children:[t.jsxs("h1",{children:["frontmatter.title: ",o.title]}),t.jsx(s,{})]})}export{i as default};

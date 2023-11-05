@@ -1,0 +1,52 @@
+{
+  "_components-eb3f5fdc.js": {
+    "file": "assets/components-eb3f5fdc.js",
+    "imports": [
+      "_jsx-runtime-26afeca0.js"
+    ]
+  },
+  "_jsx-runtime-26afeca0.js": {
+    "file": "assets/jsx-runtime-26afeca0.js"
+  },
+  "app/entry.client.tsx": {
+    "file": "assets/entry.client-1dd82fdc.js",
+    "imports": [
+      "_jsx-runtime-26afeca0.js",
+      "_components-eb3f5fdc.js"
+    ],
+    "isEntry": true,
+    "src": "app/entry.client.tsx"
+  },
+  "app/root.css": {
+    "file": "assets/root-308c5a7d.css",
+    "src": "app/root.css"
+  },
+  "app/root.tsx": {
+    "css": [
+      "assets/root-308c5a7d.css"
+    ],
+    "file": "assets/root-680ef93c.js",
+    "imports": [
+      "_jsx-runtime-26afeca0.js",
+      "_components-eb3f5fdc.js"
+    ],
+    "isEntry": true,
+    "src": "app/root.tsx"
+  },
+  "app/routes/_index.tsx": {
+    "file": "assets/_index-47773d94.js",
+    "imports": [
+      "_jsx-runtime-26afeca0.js"
+    ],
+    "isEntry": true,
+    "src": "app/routes/_index.tsx"
+  },
+  "app/routes/test.tsx": {
+    "file": "assets/test-32ab98eb.js",
+    "imports": [
+      "_jsx-runtime-26afeca0.js"
+    ],
+    "isEntry": true,
+    "src": "app/routes/test.tsx"
+  }
+}
