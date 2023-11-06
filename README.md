@@ -1,6 +1,34 @@
 # Migrate Remix to Vite
 
-- the current @remix-run/dev repo has a configuration for the vite plugin which will cause an error in the build for mdx; this repo has a 'build' and public/build directory which is pre-compiled/pre-built and it will work; for ongoing projects, you'll need to wait for the update or pull down the remix monorepo, make the edit in the createViteDevServer function yourself, build it and then insert the 'dist' folder of build/@remix-run/dev into your node_modules
+### Begin with a standard Remix install
+
+- don't have it install node_modules if you want to follow with this explanation using yarn
+
+```sh
+npx create-remix@latest
+```
+
+- change directory into your new app; for instance if it's the current default name
+
+```sh
+cd ./my-remix-app
+```
+
+- install the deps
+
+```sh
+yarn
+```
+
+- swap the @remix-run/dev/dist folder out of node_modules for the custom built one with update to compiler
+
+```sh
+rm -rf node_modules/@remix-run/dev/dist && cp -r @remix-run/dev/dist/ node_modules/@remix-run/dev/
+```
+
+### Compiler Plugin Update Notes
+
+- this is the update made to the vite plugin for remix
 
 ```ts
 viteChildCompiler = await createViteDevServer({

@@ -4,7 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "vite build && vite build --ssr",
+    "init": "rm -rf node_modules/@remix-run/dev/dist && cp -r @remix-run/dev/dist/ node_modules/@remix-run/dev/",
+    "clean": "rm -rf build && rm -rf public/build",
+    "build": "npm run clean && npm run init && vite build && vite build --ssr",
     "dev": "node ./server.mjs",
     "start": "cross-env NODE_ENV=production node ./server.mjs",
     "typecheck": "tsc"
@@ -31,6 +33,7 @@
     "tailwindcss": "^3.3.5",
     "typescript": "^5.1.6",
     "vite": "^4.5.0",
+    "vite-plugin-svgr": "^4.1.0",
     "vite-tsconfig-paths": "^4.2.1"
   },
   "engines": {
