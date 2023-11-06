@@ -8,7 +8,7 @@
     "clean": "rm -rf build && rm -rf public/build",
     "build": "npm run clean && npm run init && vite build && vite build --ssr",
     "dev": "node ./server.mjs",
-    "start": "cross-env NODE_ENV=production node ./server.mjs",
+    "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
   "dependencies": {
